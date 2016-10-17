@@ -1,13 +1,17 @@
 package agenda.datos;
 
-public class Amigos {
+public class Amigo {
 	private String nombre;
 	private String email;
 	private String telefono;
 	
-	//declarar metodo constructor
-	public Amigos(String nombre){
-		
+	//declarar metodos constructores
+	public Amigo(){
+		this.nombre=" ";
+	}
+	
+	public Amigo(String nombre){
+		this.nombre=nombre;
 	}
 
 	//metodos getters and setters
@@ -35,8 +39,6 @@ public class Amigos {
 	public void setTelefono(String telefono) {
 		this.telefono = telefono;
 	}
-	
-	
 	
 	
 }
