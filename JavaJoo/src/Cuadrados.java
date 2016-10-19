@@ -6,7 +6,7 @@ public class Cuadrados {
 		// TODO Auto-generated method stub
 
 		Scanner sc= new Scanner(System.in);
-		
+	
 		int n;
 		System.out.print("Introduce un numero: ");
 		n=sc.nextInt();
@@ -18,17 +18,18 @@ public class Cuadrados {
 			suma=suma+num;
 			num=num*2;
 		}*/
+		int num=n*n;
 		int cont=0;
-		for(int i=1;i<=n;i++){	
+		
+		for(int i=1;i<=num;i++){	
 			System.out.print("*");
 			cont++;
-		}	
-			if(cont==n){
-				for(int x=1;x<=n;x++){
+			if(cont<=n){
+				cont=0;
 				System.out.print("*");
-				}
-			
-			}			
+			}		
+		}	
+				
 	}
 
 }
