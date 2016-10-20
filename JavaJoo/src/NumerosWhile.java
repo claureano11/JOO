@@ -6,16 +6,16 @@ public class NumerosWhile {
 		Scanner sc= new Scanner(System.in);
 		
 		//pedir numero por consola
-		System.out.print("Introduce un numero: ");
-		int num=sc.nextInt();
-		int cont=0;
-		
+		//System.out.print("Introduce un numero: ");
+		//int num=sc.nextInt();
+		int cont=-1;
+		int num=0;
 		while(num>=0){
 			cont++;
 			System.out.print("Introduce un numero: ");
 			num=sc.nextInt();
 		}
-		System.out.print("La cantidad numeros introducidos son: "+cont);
+		System.out.print("La cantidad de numeros positivos introducidos son: "+cont);
 	}
 
 }
