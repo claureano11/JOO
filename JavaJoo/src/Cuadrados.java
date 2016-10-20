@@ -1,35 +1,27 @@
 import java.util.Scanner;
+public class Cuadrados{
 
-public class Cuadrados {
-
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+	public static void main(String[] args){
+		//definicion de la clase scanner
 		Scanner sc= new Scanner(System.in);
-	
-		int n;
+		
+		//pedir numero por consola
 		System.out.print("Introduce un numero: ");
-		n=sc.nextInt();
-		
-		
-		/*
-		CRUD
-		for(int i=1;i<=64;i++){
-			suma=suma+num;
-			num=num*2;
-		}*/
-		int num=n*n;
+		int n=sc.nextInt();
+		System.out.print("\n");
+		//System.out.println((int)(Math.pow(2,3)));
+		//declaracion de las variables
+		int num=(int)(Math.pow(n,2));
 		int cont=0;
 		
-		for(int i=1;i<=num;i++){	
-			System.out.print("*");
-			cont++;
-			if(cont<=n){
-				cont=0;
-				System.out.print("*");
-			}		
-		}	
-				
+		//dibujar el cuadrado con FOR
+		for(int i=1;i<=num;i++){		
+			System.out.print("* ");
+			cont=cont+1;
+				if(cont==n){
+					System.out.print("\n");
+					cont=0;
+				}		
+		}				
 	}
-
 }
