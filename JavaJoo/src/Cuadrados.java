@@ -2,13 +2,29 @@ import java.util.Scanner;
 public class Cuadrados{
 
 	public static void main(String[] args){
+		
 		//definicion de la clase scanner
 		Scanner sc= new Scanner(System.in);
+				
+			//pedir numero por consola
+			System.out.print("Introduce un numero: ");
+			int numCar=sc.nextInt();
+			System.out.print("\n");
 		
-		//pedir numero por consola
-		System.out.print("Introduce un numero: ");
-		int n=sc.nextInt();
-		System.out.print("\n");
+		//int numCar;	
+		String car="*";
+		
+		for(int i=1;i<=numCar;i++){
+			for(int j=1;j<=numCar;j++){
+				System.out.print(car);
+			}
+			System.out.print("\n");
+		}
+		
+		
+		
+		/*
+	
 		//System.out.println((int)(Math.pow(2,3)));
 		//declaracion de las variables
 		int num=(int)(Math.pow(n,2));
@@ -16,12 +32,14 @@ public class Cuadrados{
 		
 		//dibujar el cuadrado con FOR
 		for(int i=1;i<=num;i++){		
-			System.out.print("* ");
+			System.out.print(" * ");
 			cont=cont+1;
 				if(cont==n){
 					System.out.print("\n");
 					cont=0;
 				}		
-		}				
+		}	
+		*/			
 	}
 }
+
